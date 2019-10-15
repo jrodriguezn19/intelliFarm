@@ -2,29 +2,43 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'Dashboard',
+    title: 'Admin Dashboard',
     icon: 'home-outline',
     link: '/pages/dashboard',
     home: true,
   },
   {
-    title: 'FEATURES',
-    group: true,
-  },
-  {
-    title: 'Auth',
+    title: 'Animals',
     icon: 'lock-outline',
     children: [
       {
-        title: 'Login',
+        title: 'Cows',
         link: '/auth/login',
       },
       {
-        title: 'Register',
+        title: 'Pigs',
         link: '/auth/register',
       },
       {
-        title: 'Request Password',
+        title: 'Sheep',
+        link: '/auth/request-password',
+      },
+    ],
+  },
+  {
+    title: 'Plants',
+    icon: 'lock-outline',
+    children: [
+      {
+        title: 'Flowers',
+        link: '/auth/login',
+      },
+      {
+        title: 'Avocados',
+        link: '/auth/register',
+      },
+      {
+        title: 'Oranges',
         link: '/auth/request-password',
       },
       {

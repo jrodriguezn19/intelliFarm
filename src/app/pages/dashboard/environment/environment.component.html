@@ -1,0 +1,47 @@
+<h1>Aqui desde environment component</h1>
+<br>
+<div class="row">
+  <div class="col-sm">
+    <nb-card status="success">
+      <nb-card-header>Temperature</nb-card-header>
+      <nb-card-body>
+        <ul *ngFor="let sensor of environment | async">
+          {{ sensor.temperature }} C
+        </ul>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-sm">
+    <nb-card status="success">
+      <nb-card-header>Humidity</nb-card-header>
+      <nb-card-body>
+        <ul *ngFor="let sensor of environment | async">
+          {{ sensor.humidity }} %
+        </ul>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-sm">
+    <nb-card status="success">
+      <nb-card-header>Wind Speed</nb-card-header>
+      <nb-card-body>
+        <ul *ngFor="let sensor of environment | async">
+          {{ sensor.wind }} Km/h
+        </ul>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-sm">
+    <nb-card status="success">
+      <nb-card-header>UV Index</nb-card-header>
+      <nb-card-body>
+        <ul *ngFor="let sensor of environment | async">
+          {{ sensor.UV }}
+        </ul>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

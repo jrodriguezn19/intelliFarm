@@ -4,10 +4,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akveo/ngx-admin.git"
+    "url": "git+https://github.com/jrodriguez19/intelliFarm"
   },
   "bugs": {
-    "url": "https://github.com/akveo/ngx-admin/issues"
+    "url": "https://github.com/jrodriguez19/intelliFarm"
   },
   "scripts": {
     "ng": "ng",
@@ -35,6 +35,7 @@
     "@angular/common": "^8.0.0",
     "@angular/compiler": "^8.0.0",
     "@angular/core": "^8.0.0",
+    "@angular/fire": "^5.2.1",
     "@angular/forms": "^8.0.0",
     "@angular/platform-browser": "^8.0.0",
     "@angular/platform-browser-dynamic": "^8.0.0",
@@ -47,6 +48,7 @@
     "classlist.js": "1.1.20150312",
     "core-js": "2.5.1",
     "eva-icons": "^1.1.0",
+    "firebase": "^7.1.0",
     "intl": "1.2.5",
     "ionicons": "2.0.1",
     "nebular-icons": "1.1.0",
