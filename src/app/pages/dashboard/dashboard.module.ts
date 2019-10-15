@@ -5,6 +5,8 @@ import { ThemeModule } from '../../@theme/theme.module';
 
 import { DashboardComponent } from './dashboard.component';
 import { EnvironmentComponent } from './environment/environment.component';
+import { CowsComponent } from './cows/cows.component';
+import { PigsComponent } from "./pigs/pigs.component";
 
 @NgModule({
   imports: [
@@ -13,7 +15,9 @@ import { EnvironmentComponent } from './environment/environment.component';
   ],
   declarations: [
     DashboardComponent,
-    EnvironmentComponent,    
+    EnvironmentComponent,  
+    CowsComponent, 
+    PigsComponent
   ],
 })
 export class DashboardModule { }

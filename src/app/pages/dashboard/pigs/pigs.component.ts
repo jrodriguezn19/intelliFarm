@@ -4,17 +4,18 @@ import { Observable } from 'rxjs';
 
 
 @Component({
-  selector: 'environment-component',
-  templateUrl: './environment.component.html',
+  selector: 'pigs-component',
+  templateUrl: './pigs.component.html',
 })
 
-export class EnvironmentComponent {
+export class PigsComponent {
 
-  environment: Observable<any>;
+    pigs: Observable<any>;
   
   constructor(db: AngularFireDatabase) {
     
-    this.environment = db.object('environment').valueChanges();
+    this.pigs = db.object('pigs').valueChanges();
+    
   }
 
 }

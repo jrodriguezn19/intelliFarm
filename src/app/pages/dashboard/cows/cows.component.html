@@ -1,0 +1,32 @@
+<h1>Cows Monitor</h1>
+<br>
+<div class="row">
+  <div class="col-sm">
+    <nb-card status="warning">
+      <nb-card-header>Body Temperature</nb-card-header>
+      <nb-card-body>
+        <h1>{{ (cows | async)?.temperature }} °C </h1>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-sm">
+    <nb-card status="warning">
+      <nb-card-header>Heart Rate</nb-card-header>
+      <nb-card-body>
+        <h1>{{ (cows | async)?.heart }} bpm </h1>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-sm">
+    <nb-card status="warning">
+      <nb-card-header>Breaths per Minute</nb-card-header>
+      <nb-card-body>
+        <h1>{{ (cows | async)?.breaths }} </h1>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+
+

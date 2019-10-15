@@ -1,0 +1,30 @@
+<h1>Pigs Monitor</h1>
+<div class="row">
+    <div class="col-sm">
+      <nb-card status="danger">
+        <nb-card-header>Body Temperature</nb-card-header>
+        <nb-card-body>
+            <h1>{{ (pigs | async)?.temperature }} °C </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+        <nb-card status="danger">
+          <nb-card-header>Breaths per Minute</nb-card-header>
+          <nb-card-body>
+              <h1>{{ (pigs | async)?.breaths }} </h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+
+      <div class="col-sm">
+        <nb-card status="danger">
+          <nb-card-header>Heart rate</nb-card-header>
+          <nb-card-body>
+              <h1>{{ (pigs | async)?.heart }} bpm </h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+</div>
+  
