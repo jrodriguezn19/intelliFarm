@@ -18,11 +18,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
       {
         title: 'Pigs',
         link: '/pages/dashboard/pigs',
-      },
-      {
-        title: 'Sheeps',
-        link: '/pages/dashboard/sheeps',
-      },
+      },      
     ],
   },
   {
@@ -31,15 +27,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Flowers',
-        link: '/pages/flowers',
-      },
-      {
-        title: 'Avocados',
-        link: '/pages/avocados',
-      },
-      {
-        title: 'Oranges',
-        link: '/auth/request-password',
+        link: '/pages/dashboard/flowers',
       },
     ],
   },

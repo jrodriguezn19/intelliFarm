@@ -1,9 +1,9 @@
-<h1>Weather</h1>
+<h1>Plants Monitor</h1>
 <br>
 <div class="row">
   <div class="col-sm">
     <nb-card status="success">
-      <nb-card-header>Temperature</nb-card-header>
+      <nb-card-header>Ambient Temperature</nb-card-header>
       <nb-card-body>
         <h1>{{ (environment | async)?.temperature }} °C </h1>
       </nb-card-body>
@@ -21,9 +21,9 @@
 
   <div class="col-sm">
     <nb-card status="success">
-      <nb-card-header>Wind Speed</nb-card-header>
+      <nb-card-header>Soil Moisture</nb-card-header>
       <nb-card-body>
-        <h1>{{ (environment | async)?.wind }} Km/h </h1>
+        <h1>{{ (environment | async)?.wind }} % </h1>
       </nb-card-body>
     </nb-card>
   </div>

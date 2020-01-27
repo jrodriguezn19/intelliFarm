@@ -1,32 +1,296 @@
 <h1>Cows Monitor</h1>
 <br>
-<div class="row">
-  <div class="col-sm">
-    <nb-card status="warning">
-      <nb-card-header>Body Temperature</nb-card-header>
-      <nb-card-body>
-        <h1>{{ (cows | async)?.temperature }} °C </h1>
-      </nb-card-body>
-    </nb-card>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Cow id</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id1.id}}</h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Body Temperature</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id1.temperature }} °C </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Heart Rate</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id1.heart }} bpm </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Breaths per Minute</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id1.breaths }} </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Accelerometer</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (cows | async)?.id1.accelerometer.x }} G </h6>
+          <h6>Y: {{ (cows | async)?.id1.accelerometer.y }} G </h6>
+          <h6>Z: {{ (cows | async)?.id1.accelerometer.z }} G </h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Gyro</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (cows | async)?.id1.gyro.x }} G </h6>
+          <h6>Y: {{ (cows | async)?.id1.gyro.y }} G </h6>
+          <h6>Z: {{ (cows | async)?.id1.gyro.z }} G </h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Battery</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id1.battery }} V </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <nb-card accent="success">
+          <nb-card-header>Cow id</nb-card-header>
+          <nb-card-body>
+            <h1>{{ (cows | async)?.id2.id}}</h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+      <div class="col-sm">
+        <nb-card accent="success">
+          <nb-card-header>Body Temperature</nb-card-header>
+          <nb-card-body>
+            <h1>{{ (cows | async)?.id2.temperature }} °C </h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+      <div class="col-sm">
+        <nb-card accent="success">
+          <nb-card-header>Heart Rate</nb-card-header>
+          <nb-card-body>
+            <h1>{{ (cows | async)?.id2.heart }} bpm </h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+  
+      <div class="col-sm">
+        <nb-card accent="success">
+          <nb-card-header>Breaths per Minute</nb-card-header>
+          <nb-card-body>
+            <h1>{{ (cows | async)?.id2.breaths }} </h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+      <div class="col-sm">
+        <nb-card accent="success">
+          <nb-card-header>Accelerometer</nb-card-header>
+          <nb-card-body>
+            <h6>X: {{ (cows | async)?.id2.accelerometer.x }} G </h6>
+            <h6>Y: {{ (cows | async)?.id2.accelerometer.y }} G </h6>
+            <h6>Z: {{ (cows | async)?.id2.accelerometer.z }} G </h6>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+      <div class="col-sm">
+        <nb-card accent="success">
+          <nb-card-header>Gyro</nb-card-header>
+          <nb-card-body>
+            <h6>X: {{ (cows | async)?.id2.gyro.x }}</h6>
+            <h6>Y: {{ (cows | async)?.id2.gyro.y }}</h6>
+            <h6>Z: {{ (cows | async)?.id2.gyro.z }}</h6>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+      <div class="col-sm">
+        <nb-card accent="success">
+          <nb-card-header>Battery</nb-card-header>
+          <nb-card-body>
+            <h1>{{ (cows | async)?.id2.battery }} V </h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </div>
   </div>
 
-  <div class="col-sm">
-    <nb-card status="warning">
-      <nb-card-header>Heart Rate</nb-card-header>
-      <nb-card-body>
-        <h1>{{ (cows | async)?.heart }} bpm </h1>
-      </nb-card-body>
-    </nb-card>
+<br>
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Cow id</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id3.id}}</h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Body Temperature</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id3.temperature }} °C </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Heart Rate</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id3.heart }} bpm </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Breaths per Minute</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id3.breaths }} </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Accelerometer</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (cows | async)?.id3.accelerometer.x }} G </h6>
+          <h6>Y: {{ (cows | async)?.id3.accelerometer.y }} G </h6>
+          <h6>Z: {{ (cows | async)?.id3.accelerometer.z }} G </h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Gyro</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (cows | async)?.id3.gyro.x }}</h6>
+          <h6>Y: {{ (cows | async)?.id3.gyro.y }}</h6>
+          <h6>Z: {{ (cows | async)?.id3.gyro.z }}</h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Battery</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id3.battery }} V </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
   </div>
+</div>
 
-  <div class="col-sm">
-    <nb-card status="warning">
-      <nb-card-header>Breaths per Minute</nb-card-header>
-      <nb-card-body>
-        <h1>{{ (cows | async)?.breaths }} </h1>
-      </nb-card-body>
-    </nb-card>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Cow id</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id4.id}}</h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Body Temperature</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id4.temperature }} °C </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Heart Rate</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id4.heart }} bpm </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Breaths per Minute</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id4.breaths }} </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Accelerometer</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (cows | async)?.id4.accelerometer.x }} G </h6>
+          <h6>Y: {{ (cows | async)?.id4.accelerometer.y }} G </h6>
+          <h6>Z: {{ (cows | async)?.id4.accelerometer.z }} G </h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Gyro</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (cows | async)?.id4.gyro.x }}</h6>
+          <h6>Y: {{ (cows | async)?.id4.gyro.y }}</h6>
+          <h6>Z: {{ (cows | async)?.id4.gyro.z }}</h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="success">
+        <nb-card-header>Battery</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (cows | async)?.id4.battery }} V </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
   </div>
-
-
-
+</div>

@@ -1,30 +1,296 @@
 <h1>Pigs Monitor</h1>
-<div class="row">
+<br>
+<div class="container">
+  <div class="row">
     <div class="col-sm">
-      <nb-card status="danger">
-        <nb-card-header>Body Temperature</nb-card-header>
+      <nb-card accent="warning">
+        <nb-card-header>Pig id</nb-card-header>
         <nb-card-body>
-            <h1>{{ (pigs | async)?.temperature }} °C </h1>
+          <h1>{{ (pigs | async)?.id1.id}}</h1>
         </nb-card-body>
       </nb-card>
     </div>
 
     <div class="col-sm">
-        <nb-card status="danger">
+      <nb-card accent="warning">
+        <nb-card-header>Body Temperature</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id1.temperature }} °C </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Heart Rate</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id1.heart }} bpm </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Breaths per Minute</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id1.breaths }} </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Accelerometer</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (pigs | async)?.id1.accelerometer.x }} G </h6>
+          <h6>Y: {{ (pigs | async)?.id1.accelerometer.y }} G </h6>
+          <h6>Z: {{ (pigs | async)?.id1.accelerometer.z }} G </h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Gyro</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (pigs | async)?.id1.gyro.x }} </h6>
+          <h6>Y: {{ (pigs | async)?.id1.gyro.y }} </h6>
+          <h6>Z: {{ (pigs | async)?.id1.gyro.z }} </h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Battery</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id1.battery }} V </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <nb-card accent="warning">
+          <nb-card-header>Pig id</nb-card-header>
+          <nb-card-body>
+            <h1>{{ (pigs | async)?.id2.id}}</h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+      <div class="col-sm">
+        <nb-card accent="warning">
+          <nb-card-header>Body Temperature</nb-card-header>
+          <nb-card-body>
+            <h1>{{ (pigs | async)?.id2.temperature }} °C </h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+      <div class="col-sm">
+        <nb-card accent="warning">
+          <nb-card-header>Heart Rate</nb-card-header>
+          <nb-card-body>
+            <h1>{{ (pigs | async)?.id2.heart }} bpm </h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+  
+      <div class="col-sm">
+        <nb-card accent="warning">
           <nb-card-header>Breaths per Minute</nb-card-header>
           <nb-card-body>
-              <h1>{{ (pigs | async)?.breaths }} </h1>
+            <h1>{{ (pigs | async)?.id2.breaths }} </h1>
           </nb-card-body>
         </nb-card>
       </div>
-
-      <div class="col-sm">
-        <nb-card status="danger">
-          <nb-card-header>Heart rate</nb-card-header>
-          <nb-card-body>
-              <h1>{{ (pigs | async)?.heart }} bpm </h1>
-          </nb-card-body>
-        </nb-card>
-      </div>
-</div>
   
+      <div class="col-sm">
+        <nb-card accent="warning">
+          <nb-card-header>Accelerometer</nb-card-header>
+          <nb-card-body>
+            <h6>X: {{ (pigs | async)?.id2.accelerometer.x }} G </h6>
+            <h6>Y: {{ (pigs | async)?.id2.accelerometer.y }} G </h6>
+            <h6>Z: {{ (pigs | async)?.id2.accelerometer.z }} G </h6>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+      <div class="col-sm">
+        <nb-card accent="warning">
+          <nb-card-header>Gyro</nb-card-header>
+          <nb-card-body>
+            <h6>X: {{ (pigs | async)?.id2.gyro.x }}</h6>
+            <h6>Y: {{ (pigs | async)?.id2.gyro.y }}</h6>
+            <h6>Z: {{ (pigs | async)?.id2.gyro.z }}</h6>
+          </nb-card-body>
+        </nb-card>
+      </div>
+  
+      <div class="col-sm">
+        <nb-card accent="warning">
+          <nb-card-header>Battery</nb-card-header>
+          <nb-card-body>
+            <h1>{{ (pigs | async)?.id2.battery }} V </h1>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Pig id</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id3.id}}</h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Body Temperature</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id3.temperature }} °C </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Heart Rate</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id3.heart }} bpm </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Breaths per Minute</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id3.breaths }} </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Accelerometer</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (pigs | async)?.id3.accelerometer.x }} G </h6>
+          <h6>Y: {{ (pigs | async)?.id3.accelerometer.y }} G </h6>
+          <h6>Z: {{ (pigs | async)?.id3.accelerometer.z }} G </h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Gyro</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (pigs | async)?.id3.gyro.x }}</h6>
+          <h6>Y: {{ (pigs | async)?.id3.gyro.y }}</h6>
+          <h6>Z: {{ (pigs | async)?.id3.gyro.z }}</h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Battery</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id3.battery }} V </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Pig id</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id4.id}}</h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Body Temperature</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id4.temperature }} °C </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Heart Rate</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id4.heart }} bpm </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Breaths per Minute</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id4.breaths }} </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Accelerometer</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (pigs | async)?.id4.accelerometer.x }} G </h6>
+          <h6>Y: {{ (pigs | async)?.id4.accelerometer.y }} G </h6>
+          <h6>Z: {{ (pigs | async)?.id4.accelerometer.z }} G </h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Gyro</nb-card-header>
+        <nb-card-body>
+          <h6>X: {{ (pigs | async)?.id4.gyro.x }}</h6>
+          <h6>Y: {{ (pigs | async)?.id4.gyro.y }}</h6>
+          <h6>Z: {{ (pigs | async)?.id4.gyro.z }}</h6>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-sm">
+      <nb-card accent="warning">
+        <nb-card-header>Battery</nb-card-header>
+        <nb-card-body>
+          <h1>{{ (pigs | async)?.id4.battery }} V </h1>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+</div>
