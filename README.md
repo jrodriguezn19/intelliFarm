@@ -1,7 +1,10 @@
 # intelliFarm
 
-Web App developed to monitor sensors in Smart Farms.<br><br>
-Technologies used:<br><br>
--Web App developed using Angular 8, Bootstrap and Nebular UI libraries. .<br>
--Firebase to store and centralize all data from different clients.<br>
--Python collect the multiiple sensor readings using a Raspberry Pi and send the data to Firebase.<br>
+Web Application to monitor the environment and animals in Smart Farms.
+
+Technologies used:
+- The main dashboard was developed using the Javascript framework **Angular**, Bootstrap and Nebular UI libraries.
+- The sensor readings installed on field are collected through a Raspberry Pi runing a program in Python that process the collected data and send it to the database in Firebase.
+
+![GeneralDashboard1.png](https://github.com/jrodriguez19/intelliFarm/blob/master/screenshots/GeneralDashboard1.png?raw=true)
+
