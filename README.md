@@ -1,10 +1,35 @@
 # intelliFarm
 
-Web Application to monitor the environment and animals in Smart Farms.
+## Overview
 
-Technologies used:
--   The main dashboard was developed using the Javascript Framework **Angular**, Bootstrap and Nebular UI libraries.
--   The sensor readings to measure environmental variables and monitor the animals are collected through a Raspberry Pi running a program written in **Python** that process the collected data and send it to a database in Firebase.
+intelliFarm is a web application designed to monitor the environment and animals in smart farms. By integrating sensor data collection with a robust dashboard, intelliFarm enables farm managers to oversee environmental conditions and animal health in real-time, enhancing the management and productivity of modern farms.
+
+## Features
+
+- **Real-Time Monitoring**: Track environmental variables and animal conditions continuously.
+- **Intuitive Dashboard**: Developed with Angular, Bootstrap, and Nebular UI for an engaging user experience.
+- **Sensor Data Processing**: Raspberry Pi running a Python program for efficient data collection and processing.
+- **Cloud Storage**: Sensor data stored and managed in Firebase for scalability and accessibility.
+
+## Technology Stack
+
+- **Frontend**: Angular, Bootstrap, Nebular UI
+- **Backend**: Python on Raspberry Pi
+- **Database**: Firebase
+- **Hardware**: Raspberry Pi
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request or open an issue to discuss any changes or improvements.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or support, please contact [jrodrigueznocua@gmail.com](mailto:your-email@example.com).
+
 
 ![GeneralDashboard1.png](https://github.com/jrodriguez19/intelliFarm/blob/master/screenshots/GeneralDashboard1.png?raw=true)
 
