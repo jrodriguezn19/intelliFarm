@@ -14,8 +14,7 @@ intelliFarm is a web application designed to monitor the environment and animals
 ## Technology Stack
 
 - **Frontend**: Angular, Bootstrap, Nebular UI
-- **Backend**: Python on Raspberry Pi
-- **Database**: Firebase
+- **Backend**: Firebase
 - **Hardware**: Raspberry Pi
 
 ## Contributing
