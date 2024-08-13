@@ -23,10 +23,6 @@ intelliFarm is a web application designed to monitor the environment and animals
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes or improvements.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 For any inquiries or support, please contact [jrodrigueznocua@gmail.com](mailto:your-email@example.com).
